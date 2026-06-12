@@ -12,6 +12,7 @@ index.html                    the whole page
 styles.css                    dark theme default, light theme via toggle
 script.js                     theme toggle, scroll reveal, footer year
 favicon.svg                   terminal-prompt favicon
+og.png                        social preview card (1200×630) for link shares
 Faisal-Lumintang-Resume.pdf   served by the "Download résumé" button
 ```
 
