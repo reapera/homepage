@@ -163,7 +163,7 @@ body {
 .section-sub { color: var(--text-dim); margin-bottom: 34px; max-width: 64ch; }
 
 /* ---------- project cards ---------- */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 60px; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 60px; }
 .card {
   display: flex; flex-direction: column; gap: 12px;
   background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
