@@ -59,7 +59,7 @@
         <p class="eyebrow">// legal</p>
         <h1>Privacy Policy</h1>
         <p class="role">For the game <strong>If I Fits, I Sits</strong></p>
-        <p class="updated text-dim">Last updated: 4 September 2026</p>
+        <p class="updated text-dim">Last updated: 6 September 2026</p>
 
         <div class="callout">
           <p><strong>Short version:</strong> the game collects nothing, sends nothing, and has no internet access. Your progress is a single file on your own device.</p>
@@ -78,23 +78,23 @@
         </p>
 
         <h2>What the game collects</h2>
-        <p><strong>Nothing.</strong> The game does not collect, store, or transmit any personal data. Specifically, it does not collect:</p>
+        <p><strong>Nothing.</strong> The game does not collect, store, or transmit any personal data. This covers the game itself; the advertising SDK in the Android app is described separately below. The game does not collect:</p>
         <ul>
           <li>Names, email addresses, phone numbers or any contact details</li>
           <li>Accounts or logins — the game has none</li>
           <li>Location data of any kind</li>
-          <li>Device identifiers, advertising IDs or usage analytics</li>
+          <li>Usage analytics of any kind (the ad SDK's use of the advertising ID is covered below)</li>
           <li>Photos, files, contacts, microphone or camera access</li>
           <li>Crash or diagnostic reports</li>
         </ul>
 
         <h2>Network access</h2>
         <p>
-          The Android app requests <strong>no permissions beyond the platform
-          defaults</strong>, and neither version contains any networking code. The
-          game does not open connections, call any server, or include analytics,
-          advertising or third-party SDKs. The Android version works identically with
-          the device offline, because it is always effectively offline.
+          The game's own code contains no networking whatsoever - it opens no
+          connections, calls no server, and includes no analytics. The browser version
+          is therefore entirely self-contained. The Android app is the one exception:
+          it bundles Google's advertising SDK, which does talk to Google's servers.
+          See <em>Advertising and purchases</em> below for exactly what that collects.
         </p>
 
         <h2>What is stored on your device</h2>
@@ -133,10 +133,37 @@
 
         <h2>Advertising and purchases</h2>
         <p>
-          The current version contains <strong>no advertising and no in-app
-          purchases</strong>. Hints are earned through play. If a future version adds
-          either, this policy will be updated before that version is released, and the
-          Play listing's Data safety section will be updated to match.
+          The <strong>browser version</strong> of the game shows no advertising and
+          has nothing to buy.
+        </p>
+        <p>
+          The <strong>Android app is ad-supported</strong>. Advertising is served by
+          Google AdMob, and a one-time in-app purchase removes it. Unlike the rest of
+          the game, an advertising SDK does communicate with its own servers, and it
+          collects data the game itself never touches:
+        </p>
+        <ul>
+          <li>your device's <strong>advertising identifier</strong>, which is resettable
+            and can be cleared in Android's settings</li>
+          <li>coarse device and app information, such as model, operating system version
+            and country, used to choose which advert to show</li>
+          <li>whether an advert was shown, viewed or clicked</li>
+        </ul>
+        <p>
+          That data goes to Google, not to the developer, and is governed by the
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google
+          Advertising Policy</a>. The developer sees only aggregate revenue figures. You
+          can limit ad personalisation at any time under
+          <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> on your device, or remove the
+          adverts entirely with the one-time purchase.
+        </p>
+        <p>
+          Purchases are processed by <strong>Google Play Billing</strong>. The developer
+          never sees your payment details.
+        </p>
+        <p>
+          Everything else in this policy still holds: the game itself has no networking
+          code of its own, and your progress never leaves your device.
         </p>
 
         <h2>Changes to this policy</h2>
