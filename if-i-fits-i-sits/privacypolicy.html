@@ -59,10 +59,10 @@
         <p class="eyebrow">// legal</p>
         <h1>Privacy Policy</h1>
         <p class="role">For the game <strong>If I Fits, I Sits</strong></p>
-        <p class="updated text-dim">Last updated: 6 September 2026</p>
+        <p class="updated text-dim">Last updated: 12 September 2026</p>
 
         <div class="callout">
-          <p><strong>Short version:</strong> the game collects nothing, sends nothing, and has no internet access. Your progress is a single file on your own device.</p>
+          <p><strong>Short version:</strong> the browser version collects nothing and has no internet access. The Android app records anonymous gameplay statistics, so I can see which levels people get stuck on, and shows adverts. Neither knows who you are. Your progress stays on your own device.</p>
         </div>
 
         <h2>What this covers</h2>
@@ -70,7 +70,8 @@
           This policy applies to the game <strong>If I Fits, I Sits</strong> by
           Faisal Lumintang, in both forms it ships in: the Android app on Google Play
           (package <code>com.burangkeng.fitsandsits</code>) and the browser version hosted on
-          this site. The same build logic underlies both, and neither collects anything.
+          this site. They share the same game code, but only the Android app collects
+          anything: the browser version has no adverts and no analytics.
         </p>
         <p>
           A copy of the browser version is also published on itch.io. That copy is
@@ -78,23 +79,45 @@
         </p>
 
         <h2>What the game collects</h2>
-        <p><strong>Nothing.</strong> The game does not collect, store, or transmit any personal data. This covers the game itself; the advertising SDK in the Android app is described separately below. The game does not collect:</p>
+        <p><strong>No personal data.</strong> The Android app records anonymous gameplay
+          statistics, described under <em>Analytics</em> below, and shows adverts, described
+          under <em>Advertising and purchases</em>. Beyond those two, nothing is collected.
+          In particular the game never collects:</p>
         <ul>
           <li>Names, email addresses, phone numbers or any contact details</li>
           <li>Accounts or logins — the game has none</li>
-          <li>Location data of any kind</li>
-          <li>Usage analytics of any kind (the ad SDK's use of the advertising ID is covered below)</li>
+          <li>Location data of any kind, beyond which country you are in</li>
           <li>Photos, files, contacts, microphone or camera access</li>
-          <li>Crash or diagnostic reports</li>
+          <li>Anything you type</li>
         </ul>
+
+        <h2>Analytics</h2>
+        <p>
+          <strong>The Android app only.</strong> It uses
+          <a href="https://gameanalytics.com/privacy/" target="_blank" rel="noopener">GameAnalytics</a>
+          to record how the game is played. This exists for one reason: to show which
+          levels players get stuck on, so they can be fixed. What it records:
+        </p>
+        <ul>
+          <li>a <strong>randomly generated identifier</strong> for this installation, created
+            on the device — it is not your advertising ID, and it is not linked to any account</li>
+          <li>device model, operating system version and country</li>
+          <li>gameplay events: a level being started, finished or given up on, how many
+            moves it took, hints being used, and purchases completing</li>
+        </ul>
+        <p>
+          None of it identifies you, none of it is sold, and none of it is used to target
+          advertising. Uninstalling the app removes the identifier along with it. The
+          browser version sends none of this.
+        </p>
 
         <h2>Network access</h2>
         <p>
-          The game's own code contains no networking whatsoever - it opens no
-          connections, calls no server, and includes no analytics. The browser version
-          is therefore entirely self-contained. The Android app is the one exception:
-          it bundles Google's advertising SDK, which does talk to Google's servers.
-          See <em>Advertising and purchases</em> below for exactly what that collects.
+          The browser version is entirely self-contained: it opens no connections and
+          calls no server. The Android app reaches the network for three things and
+          nothing else — adverts, the analytics described above, and Google Play
+          Billing when you buy something. Gameplay itself never needs a connection,
+          and the game is fully playable offline.
         </p>
 
         <h2>What is stored on your device</h2>
@@ -114,10 +137,11 @@
 
         <h2>Children's privacy</h2>
         <p>
-          The game is suitable for all ages and collects no data from anyone,
-          including children under 13. Because nothing is collected, there is nothing
-          to request the deletion of, and no parental consent mechanism is required
-          under COPPA or the GDPR.
+          The game is suitable for all ages. It asks for no personal information from
+          anyone, including children under 13, and the analytics identifier is random
+          rather than tied to a person. To request deletion of the data associated with
+          an installation, email the address below; because the identifier is not linked
+          to an account, please send it from the device or include it when you write.
         </p>
 
         <h2>What Google Play collects</h2>
@@ -138,9 +162,9 @@
         </p>
         <p>
           The <strong>Android app is ad-supported</strong>. Advertising is served by
-          Google AdMob, and a one-time in-app purchase removes it. Unlike the rest of
-          the game, an advertising SDK does communicate with its own servers, and it
-          collects data the game itself never touches:
+          Google AdMob. Adverts are never forced: the only one is a rewarded video you
+          choose to watch in exchange for hints. The advertising SDK communicates with
+          Google's servers and collects:
         </p>
         <ul>
           <li>your device's <strong>advertising identifier</strong>, which is resettable
@@ -154,16 +178,19 @@
           <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google
           Advertising Policy</a>. The developer sees only aggregate revenue figures. You
           can limit ad personalisation at any time under
-          <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> on your device, or remove the
-          adverts entirely with the one-time purchase.
+          <em>Settings &rsaquo; Privacy &rsaquo; Ads</em> on your device, and you can simply
+          not watch the video, which is the only advert the game shows.
         </p>
         <p>
-          Purchases are processed by <strong>Google Play Billing</strong>. The developer
-          never sees your payment details.
+          There are two things to buy, both of them hints: a pack of 25, and unlimited
+          hints. Neither removes advertising, because there is no advertising to remove
+          beyond the video you opt into. Purchases are processed by
+          <strong>Google Play Billing</strong>, and the developer never sees your payment
+          details.
         </p>
         <p>
-          Everything else in this policy still holds: the game itself has no networking
-          code of its own, and your progress never leaves your device.
+          Everything else in this policy still holds: nothing collected identifies you,
+          and your progress never leaves your device.
         </p>
 
         <h2>Changes to this policy</h2>
